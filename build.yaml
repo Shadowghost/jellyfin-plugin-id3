@@ -1,0 +1,17 @@
+name: "ID3"
+guid: "4DA2BAC0-D167-44B1-970B-4BF75912BC06"
+imageUrl: "https://repo.jellyfin.org/releases/plugin/images/jellyfin-plugin-id3.png"
+version: "1"
+targetAbi: "10.8.0.0"
+framework: "net6.0"
+owner: "jellyfin"
+overview: "Parses ID3 metadata from audio files"
+description: >
+  Parses ID3 metadata from audio files.
+
+category: "General"
+artifacts:
+  - "Jellyfin.Plugin.ID3.dll"
+  - "ATL.dll"
+changelog: |-
+  - Initial Release
