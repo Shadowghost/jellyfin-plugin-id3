@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using ATL;
@@ -31,7 +32,8 @@ public class SongProvider : ILocalMetadataProvider<Audio>
                 ParentIndexNumber = track.DiscNumber,
                 Overview = track.Description,
                 Genres = new[] { track.Genre },
-                ProductionYear = track.Year
+                ProductionYear = track.Year,
+                PremiereDate = track.PublishingDate
             }
         };
 
