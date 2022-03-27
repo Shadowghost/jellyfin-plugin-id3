@@ -25,13 +25,13 @@ public class SongProvider : ILocalMetadataProvider<Audio>
             Item = new Audio
             {
                 Name = track.Title,
-                Artists = new[] { track.Artist },
+                Artists = track.Artist.Split(Settings.DisplayValueSeparator),
                 Album = track.Album,
-                AlbumArtists = new[] { track.AlbumArtist },
+                AlbumArtists = track.AlbumArtist.Split(Settings.DisplayValueSeparator),
                 IndexNumber = track.TrackNumber,
                 ParentIndexNumber = track.DiscNumber,
                 Overview = track.Description,
-                Genres = new[] { track.Genre },
+                Genres = track.Genre.Split(Settings.DisplayValueSeparator),
                 ProductionYear = track.Year,
                 PremiereDate = track.PublishingDate
             }
